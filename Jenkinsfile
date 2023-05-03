@@ -53,7 +53,7 @@ spec:
                     script {
                         docker.withRegistry( 'https://hrbr.dev.castera.us', 'harbor' ) {
                             sh '''
-                                docker push hrbr.dev.castera.us/sfn/influxdb:${BUILD_ID}
+                                docker push hrbr.dev.castera.us/sfn/influxdb:1.${BUILD_ID}
                             '''
                         }
                     }
