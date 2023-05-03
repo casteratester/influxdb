@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: 'test'
+  description: 'this is only a test'
+  annotations:
+    goharbor.io/repository-slug: sfn/influxdb
+    jenkins.io/github-folder: "sfn/influxdb"
+    sonarqube.org/project-key: default/test
+spec:
+  type: service
+  lifecycle: experimental
+  owner: devops
